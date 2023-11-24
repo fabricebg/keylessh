@@ -174,7 +174,7 @@ void launchProcess(std::string &cmdLine, bool createCommPipes, PROCESS_INFORMATI
 	::ZeroMemory(&saAttr, sizeof(SECURITY_ATTRIBUTES));
     saAttr.nLength = sizeof(SECURITY_ATTRIBUTES); 
 
-    STARTUPINFO si;
+    STARTUPINFOA si;
     ::ZeroMemory(&si, sizeof(STARTUPINFO));
 	si.cb = sizeof(STARTUPINFO);
     si.dwFlags = 0;
